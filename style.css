@@ -1518,3 +1518,17 @@ blockquote {
   transform: rotate(90deg);
   box-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
 }
+
+/* ---- Subpage Hero Styles ---- */
+.hero.hero-subpage {
+  min-height: 40vh;
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero.hero-subpage .hero-content {
+  margin-top: 20px;
+}
+
