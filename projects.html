@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>조윤솔 — 포트폴리오</title>
+  <meta name="description" content="한림대학교 경영학과 & 디지털인문예술 전공 조윤솔의 포트폴리오 사이트입니다." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">YS</div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">소개</a></li>
+      <li><a href="#projects" class="nav-link">프로젝트</a></li>
+      <li><a href="#gallery" class="nav-link">갤러리</a></li>
+      <li><a href="#learning" class="nav-link">배움</a></li>
+      <li><a href="#contact" class="nav-link">연락처</a></li>
+    </ul>
+    <div class="nav-menu" id="navMenu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#about" class="mobile-nav-link">소개</a></li>
+      <li><a href="#projects" class="mobile-nav-link">프로젝트</a></li>
+      <li><a href="#gallery" class="mobile-nav-link">갤러리</a></li>
+      <li><a href="#learning" class="mobile-nav-link">배움</a></li>
+      <li><a href="#contact" class="mobile-nav-link">연락처</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <!-- Canvas Particle System -->
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+
+    <!-- Animated gradient blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+
+    <!-- Noise texture overlay -->
+    <div class="hero-noise"></div>
+
+    <!-- Grid lines -->
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal-up">All Projects</div>
+      <h1 class="hero-name reveal-up" id="heroName">
+        <span class="name-ko" style="font-size: 0.8em;">모든 프로젝트</span>
+      </h1>
+      <p class="hero-sub reveal-up">
+        지금까지 진행한 모든 과제와 프로젝트를 모아두었습니다.
+      </p>
+      <div class="hero-divider reveal-up"></div>
+      <p class="hero-desc reveal-up">
+        <span class="typewriter" id="typewriterText"></span><span class="typewriter-cursor">|</span>
+      </p>
+      <div class="hero-cta reveal-up">
+        <a href="#about" class="btn-primary">시작하기</a>
+        <a href="#projects" class="btn-outline">프로젝트 보기</a>
+      </div>
+    </div>
+
+    <!-- Interactive Stellar Objects (Planets with Tooltips) -->
+    <div class="stellar-object planet-1" data-tooltip="경영학과">
+      <div class="planet-sphere planet-violet">
+        <svg viewBox="0 0 100 100" class="planet-surface">
+          <circle cx="30" cy="35" r="8" fill="rgba(255,255,255,0.15)" />
+          <circle cx="70" cy="45" r="12" fill="rgba(255,255,255,0.1)" />
+          <circle cx="45" cy="70" r="6" fill="rgba(255,255,255,0.15)" />
+        </svg>
+      </div>
+      <div class="planet-tooltip">
+        <span class="tooltip-label">Major</span>
+        <span class="tooltip-val">경영학과</span>
+      </div>
+    </div>
+
+    <div class="stellar-object planet-2" data-tooltip="디지털인문예술전공">
+      <div class="planet-sphere planet-pink">
+        <div class="planet-ring pink-ring"></div>
+        <svg viewBox="0 0 100 100" class="planet-surface">
+          <circle cx="35" cy="30" r="6" fill="rgba(255,255,255,0.12)" />
+          <circle cx="65" cy="65" r="8" fill="rgba(255,255,255,0.08)" />
+        </svg>
+      </div>
+      <div class="planet-tooltip">
+        <span class="tooltip-label">Double Major</span>
+        <span class="tooltip-val">디지털인문예술전공</span>
+      </div>
+    </div>
+
+    <div class="stellar-object planet-3" data-tooltip="한림대학교">
+      <div class="planet-sphere planet-blue">
+        <div class="planet-ring blue-ring"></div>
+        <svg viewBox="0 0 100 100" class="planet-surface">
+          <circle cx="50" cy="30" r="10" fill="rgba(255,255,255,0.08)" />
+          <path d="M 25 55 Q 50 75 75 55" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5" />
+        </svg>
+      </div>
+      <div class="planet-tooltip">
+        <span class="tooltip-label">University</span>
+        <span class="tooltip-val">한림대학교</span>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+  </section>
+
+
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-label">02 — Projects</span>
+        <h2 class="section-title">수강 과목 & 프로젝트</h2>
+        <p class="section-desc">학기별로 배우고 만든 것들을 담았습니다</p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card glass-card reveal-up">
+          <div class="project-card-top">
+            <span class="project-course">경영정보시스템 (종합설계)</span>
+            <span class="project-semester">1학년 1학기 · 전공선택</span>
+          </div>
+          <h3 class="project-title">오늘 메뉴는 내가 정해줄게: AI 기반으로 한 식당 추천 서비스</h3>
+          <p class="project-desc">AI를 기반으로 한 식당 추천 앱을 기획해 본 팀 프로젝트입니다.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="ptag">경영정보시스템</span>
+              <span class="ptag">종합설계</span>
+            </div>
+            <div class="project-links">
+              <a href="https://drive.google.com/file/d/1b0kCdp5N59VAsCTJSyYWtUSBZ9YcCpZh/view?usp=sharing" target="_blank" class="p-link video-trigger" data-video-src="https://drive.google.com/file/d/1b0kCdp5N59VAsCTJSyYWtUSBZ9YcCpZh/preview">발표 영상 및 자료 보기 ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 (프로젝트중심융합글쓰기) -->
+        <div class="project-card glass-card reveal-up" style="--delay: 0.1s">
+          <div class="project-card-top">
+            <span class="project-course">프로젝트중심융합글쓰기</span>
+            <span class="project-semester">1학년 2학기 · 필수교양</span>
+          </div>
+          <h3 class="project-title">상품형태의 K-pop과 그에 따른 문제점</h3>
+          <p class="project-desc">K-pop 산업의 상업화가 초래하는 다양한 문제점을 분석하고 융합적 관점에서 해결 방안을 모색한 글쓰기 과제입니다.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="ptag">필수교양</span>
+              <span class="ptag">글쓰기</span>
+            </div>
+            <div class="project-links">
+              <a href="./상품형태의 K-pop과 그에 따른 문제점.pdf" class="p-link ppt-trigger" data-ppt-src="./상품형태의 K-pop과 그에 따른 문제점.pdf">자료 보기 (PDF) ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 (Portfolio Web) -->
+        <div class="project-card glass-card placeholder-card reveal-up current-project" style="--delay: 0.2s">
+          <div class="project-card-top">
+            <span class="project-course">디지털인문예술 입문</span>
+            <span class="project-semester active-semester">3학년 1학기 · 현재</span>
+          </div>
+          <h3 class="project-title">포트폴리오 웹사이트</h3>
+          <p class="project-desc">안티그래비티 IDE(html,css, javescript)를 활용해 직접 제작한 개인 포트폴리오 사이트입니다.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="ptag">HTML</span>
+              <span class="ptag">CSS</span>
+              <span class="ptag">JavaScript</span>
+            </div>
+            <span class="project-badge">진행 중</span>
+          </div>
+        </div>
+
+        <!-- Project 3.5 (관광경영론) -->
+        <div class="project-card glass-card reveal-up" style="--delay: 0.25s">
+          <div class="project-card-top">
+            <span class="project-course">관광경영론(종합설계)</span>
+            <span class="project-semester">2학년 1학기 · 전공선택</span>
+          </div>
+          <h3 class="project-title">춘천 관광이 지역사회에 미치는 영향과 지속가능한 발전을 위한 해결방안 제안</h3>
+          <p class="project-desc">김유정 문학촌을 중심으로 춘천 지역 관광의 파급 효과를 분석하고, 지속 가능한 발전을 위한 대안을 모색한 개인 연구 과제입니다.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="ptag">경영학과</span>
+              <span class="ptag">관광경영론</span>
+              <span class="ptag">전공선택</span>
+            </div>
+            <div class="project-links">
+              <a href="./[관광경영론] 20243035 조윤솔.docx" class="p-link" download>과제 보기 (Word) ⬇</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4 (관광산업론) -->
+        <div class="project-card glass-card reveal-up" style="--delay: 0.3s">
+          <div class="project-card-top">
+            <span class="project-course">관광산업론(종합설계)</span>
+            <span class="project-semester">2학년 2학기 · 전공선택</span>
+          </div>
+          <h3 class="project-title">S&T: 시니어를 위한 맞춤형 세미패키지 여행 서비스</h3>
+          <p class="project-desc">창업사업계획서를 작성한 팀 프로젝트입니다.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="ptag">경영학과</span>
+              <span class="ptag">관광산업론</span>
+              <span class="ptag">전공선택</span>
+            </div>
+            <div class="project-links">
+              <a href="./★최종_관광산업론 ７조.pdf" class="p-link ppt-trigger" data-ppt-src="./★최종_관광산업론 ７조.pdf">자료 보기 (PDF) ↗</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5 (장소마케팅) -->
+        <div class="project-card glass-card reveal-up" style="--delay: 0.4s">
+          <div class="project-card-top">
+            <span class="project-course">장소마케팅(종합설계)</span>
+            <span class="project-semester">2학년 2학기 · 전공선택</span>
+          </div>
+          <h3 class="project-title">춘천 관광 마케팅 제안서</h3>
+          <p class="project-desc">반려동물 동반객과 '혼행족'(1인 여행객)을 핵심 타겟으로 삼아, 춘천 지역 맞춤형 관광 마케팅 전략을 구상하고 제안한 팀 프로젝트입니다.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="ptag">경영학과</span>
+              <span class="ptag">장소마케팅</span>
+              <span class="ptag">전공선택</span>
+            </div>
+            <div class="project-links">
+              <a href="./장소마케팅_2조_최종발표 PPT.pdf" class="p-link ppt-trigger" data-ppt-src="./장소마케팅_2조_최종발표 PPT.pdf">발표 자료 (PDF) ↗</a>
+              <a href="./장소마케팅_2조_추가제출물(자료조사 총합본).hwpx" class="p-link" download>자료조사 (HWPX) ⬇</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 (마케팅원론) -->
+        <div class="project-card glass-card reveal-up" style="--delay: 0.5s">
+          <div class="project-card-top">
+            <span class="project-course">마케팅원론</span>
+            <span class="project-semester">2학년 2학기 · 전공선택</span>
+          </div>
+          <h3 class="project-title">라면왕 김통깨 시장 실패 원인분석</h3>
+          <p class="project-desc">마케팅의 기본 원리와 핵심 전략을 실제 사례에 적용하여 분석한 개인 과제물입니다.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="ptag">경영학과</span>
+              <span class="ptag">마케팅원론</span>
+              <span class="ptag">전공선택</span>
+            </div>
+            <div class="project-links">
+              <a href="./마케팅원론_(최종)과제물_조윤솔.pdf" class="p-link ppt-trigger" data-ppt-src="./마케팅원론_(최종)과제물_조윤솔.pdf">과제 보기 (PDF) ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7 (AI이해의기초) -->
+        <div class="project-card glass-card reveal-up" style="--delay: 0.6s">
+          <div class="project-card-top">
+            <span class="project-course">AI이해의기초</span>
+            <span class="project-semester">2학년 2학기 · 전공선택</span>
+          </div>
+          <h3 class="project-title">취뽀메이트: AI를 활용한 면접 코칭 서비스</h3>
+          <p class="project-desc">취업 준비생들을 위해 AI 기술을 접목한 맞춤형 면접 코칭 솔루션을 기획한 팀 프로젝트입니다.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="ptag">디지털인문예술</span>
+              <span class="ptag">AI이해의기초</span>
+              <span class="ptag">전공선택</span>
+            </div>
+            <div class="project-links">
+              <a href="./[AI이해의기초] 취뽀메이트 발표자료_251221_182538.pdf" class="p-link ppt-trigger" data-ppt-src="./[AI이해의기초] 취뽀메이트 발표자료_251221_182538.pdf">발표 자료 (PDF) ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 8 (403 BYPASS) -->
+        <div class="project-card glass-card reveal-up" style="--delay: 0.7s">
+          <div class="project-card-top">
+            <span class="project-course">디지털인문예술 입문</span>
+            <span class="project-semester">3학년 1학기 · 복수전공 전공선택</span>
+          </div>
+          <h3 class="project-title">403 BYPASS: 누구에게나 열려있는 무대를 위한 앱</h3>
+          <p class="project-desc">장애인 등 문화 소외 계층의 공연 관람 진입 장벽을 낮추고, 모두를 위한 정보적 접근성을 높이기 위해 기획된 서비스 기획 팀 프로젝트입니다.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="ptag">복수전공</span>
+              <span class="ptag">디지털인문예술</span>
+              <span class="ptag">전공선택</span>
+            </div>
+            <div class="project-links">
+              <a href="https://403-bypass.vercel.app/" class="p-link ppt-trigger" data-ppt-src="https://403-bypass.vercel.app/">웹사이트 팝업으로 열기 ↗</a>
+              <a href="https://eta-403-bypass.vercel.app/" class="p-link ppt-trigger" data-ppt-src="https://eta-403-bypass.vercel.app/">모바일 앱 팝업으로 열기 ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 9 (문화원형과 고전콘텐츠) -->
+        <div class="project-card glass-card reveal-up" style="--delay: 0.8s">
+          <div class="project-card-top">
+            <span class="project-course">문화원형과 고전콘텐츠</span>
+            <span class="project-semester">3학년 1학기 · 복수전공 전공선택</span>
+          </div>
+          <h3 class="project-title">결의 시선: 젠틀몬스터와 한국 금속 공예 기법의 콜라보 기획</h3>
+          <p class="project-desc">글로벌 패션 아이웨어 브랜드 '젠틀몬스터'와 한국 전통 금속 공예 기법의 가상 콜라보레이션을 기획하고, 해당 상품이 실제 홈페이지에서 판매되는 시나리오를 구상한 팀 프로젝트입니다.</p>
+          <div class="project-footer">
+            <div class="project-tags">
+              <span class="ptag">복수전공</span>
+              <span class="ptag">문화원형과 고전콘텐츠</span>
+              <span class="ptag">전공선택</span>
+            </div>
+            <div class="project-links">
+              <a href="https://gentle-gyeol.vercel.app/" class="p-link ppt-trigger" data-ppt-src="https://gentle-gyeol.vercel.app/">웹사이트 팝업으로 열기 ↗</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-name">조윤솔</div>
+      <p class="footer-school">한림대학교 · 경영학과 · 디지털인문예술</p>
+      <p class="footer-copy">© 2026 Yoonsol Cho. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Video Modal Overlay -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-content">
+      <button class="video-modal-close" id="videoModalClose" aria-label="Close video">&times;</button>
+      <div class="video-iframe-container">
+        <iframe id="videoIframe" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <!-- Fallback links for browser security blocks -->
+      <div class="video-modal-fallback">
+        <p>브라우저 보안 정책에 의해 영상이 보이지 않는 경우 아래 버튼을 이용해 주세요.</p>
+        <a href="" id="videoFallbackLink" target="_blank" class="btn-primary" style="padding: 8px 24px; font-size: 12px; margin-top: 8px; box-shadow: none;">구글 드라이브에서 직접 보기 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PPT Viewer Modal Overlay -->
+  <div class="video-modal" id="pptModal">
+    <div class="video-modal-content">
+      <button class="video-modal-close" id="pptModalClose" aria-label="Close PPT">&times;</button>
+      <div class="video-iframe-container">
+        <iframe id="pptIframe" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
