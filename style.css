@@ -127,6 +127,14 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: inline-block;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 .nav-links {
