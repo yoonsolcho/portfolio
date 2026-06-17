@@ -434,14 +434,10 @@ if (pptModal && pptIframe && pptModalClose) {
         if (pptSrc.includes('drive.google.com')) {
           const fileId = getGoogleDriveId(pptSrc);
           pptIframe.src = `https://docs.google.com/viewer?srcid=${fileId}&pid=explorer&efh=false&a=v&chrome=false&embedded=true`;
-          pptModal.classList.add('open');
-        } else if (pptSrc.endsWith('.pdf')) {
-          // 로컬 PDF 파일인 경우 브라우저 보안 제약 및 뷰어 오류를 피하기 위해 새 탭에서 열기
-          window.open(pptSrc, '_blank');
         } else {
           pptIframe.src = pptSrc;
-          pptModal.classList.add('open');
         }
+        pptModal.classList.add('open');
       } else {
         alert('PPT 발표자료 구글 공유 링크를 전달해 주시면 즉시 연결해 드리겠습니다! 이 대화방에 링크를 남겨주세요.');
       }
