@@ -250,10 +250,18 @@ window.addEventListener('scroll', () => {
 const navMenu = document.getElementById('navMenu');
 const mobileNav = document.getElementById('mobileNav');
 
-navMenu.addEventListener('click', () => mobileNav.classList.toggle('open'));
-document.querySelectorAll('.mobile-nav-link').forEach(link => {
-  link.addEventListener('click', () => mobileNav.classList.remove('open'));
-});
+if (navMenu && mobileNav) {
+  navMenu.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    mobileNav.setAttribute('aria-hidden', !isOpen);
+  });
+  document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      mobileNav.setAttribute('aria-hidden', 'true');
+    });
+  });
+}
 
 // =============================================
 // 7. Smooth Scroll
