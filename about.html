@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>소개 — 조윤솔 포트폴리오</title>
+  <meta name="description" content="한림대학교 경영학과 & 디지털인문예술 전공 조윤솔의 포트폴리오 사이트입니다." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo" style="text-decoration: none;">YS</a>
+    <ul class="nav-links">
+      <li><a href="about.html" class="nav-link" style="color: var(--accent-1);">소개</a></li>
+      <li><a href="projects.html" class="nav-link">프로젝트</a></li>
+      <li><a href="gallery.html" class="nav-link">갤러리</a></li>
+      <li><a href="learning.html" class="nav-link">배움</a></li>
+      <li><a href="contact.html" class="nav-link">연락처</a></li>
+    </ul>
+    <div class="nav-menu" id="navMenu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="about.html" class="mobile-nav-link">소개</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">프로젝트</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link">갤러리</a></li>
+      <li><a href="learning.html" class="mobile-nav-link">배움</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">연락처</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero hero-subpage" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="hero-noise"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal-up">About Me</div>
+      <h1 class="hero-name reveal-up" id="heroName">
+        <span class="name-ko" style="font-size: 0.8em;">소개</span>
+      </h1>
+      <p class="hero-sub reveal-up">
+        주전공 경영학과 복수전공 디지털인문예술의 교차점에서 배우고 성장하는 조윤솔입니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about" style="padding-top: 60px; min-height: 60vh;">
+    <div class="container">
+      <div class="about-grid" style="margin-top: 0;">
+        <div class="about-text reveal-left">
+          <p class="about-lead">
+            안녕하세요, <strong>조윤솔</strong>입니다.
+          </p>
+          <p>
+            한림대학교에서 <strong>경영학</strong>을 주전공으로,
+            <strong>디지털인문예술 전공</strong>을 공부하고 있습니다.
+            숫자와 데이터를 분석하는 경영학적 사고와,
+            기술로 표현하고 창조하는 디지털 예술의 감각을 함께 키우고 있습니다.
+          </p>
+          <p>
+            두 분야의 교차점에서 새로운 가능성을 탐구하며,
+            논리와 창의성이 공존하는 결과물을 만들고자 합니다.
+          </p>
+          <div class="about-tags">
+            <span class="tag">경영학</span>
+            <span class="tag">디지털인문예술 전공</span>
+            <span class="tag">창의적 사고</span>
+            <span class="tag">데이터 분석</span>
+            <span class="tag">웹 디자인</span>
+          </div>
+        </div>
+
+        <div class="about-cards reveal-right">
+          <div class="about-card glass-card">
+            <div class="card-icon">🎓</div>
+            <h3>한림대학교</h3>
+            <p>경영학과 (주전공)<br />디지털인문예술 전공</p>
+          </div>
+          <div class="about-card glass-card">
+            <div class="card-icon">💡</div>
+            <h3>관심 분야</h3>
+            <p>브랜딩, UX디자인<br />디지털 스토리텔링</p>
+          </div>
+          <div class="about-card glass-card">
+            <div class="card-icon">🌱</div>
+            <h3>현재 탐구 중</h3>
+            <p>웹 개발, 데이터 시각화<br />미디어 아트</p>
+          </div>
+          <div class="about-card glass-card">
+            <div class="card-icon">✨</div>
+            <h3>목표</h3>
+            <p>기술과 인문학의<br />경계를 허무는 것</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-name">조윤솔</div>
+      <p class="footer-school">한림대학교 · 경영학과 · 디지털인문예술 전공</p>
+      <p class="footer-copy">© 2026 Yoonsol Cho. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

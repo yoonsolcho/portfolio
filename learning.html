@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>배움 — 조윤솔 포트폴리오</title>
+  <meta name="description" content="한림대학교 경영학과 & 디지털인문예술 전공 조윤솔의 포트폴리오 사이트입니다." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo" style="text-decoration: none;">YS</a>
+    <ul class="nav-links">
+      <li><a href="about.html" class="nav-link">소개</a></li>
+      <li><a href="projects.html" class="nav-link">프로젝트</a></li>
+      <li><a href="gallery.html" class="nav-link">갤러리</a></li>
+      <li><a href="learning.html" class="nav-link" style="color: var(--accent-1);">배움</a></li>
+      <li><a href="contact.html" class="nav-link">연락처</a></li>
+    </ul>
+    <div class="nav-menu" id="navMenu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="about.html" class="mobile-nav-link">소개</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">프로젝트</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link">갤러리</a></li>
+      <li><a href="learning.html" class="mobile-nav-link">배움</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">연락처</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero hero-subpage" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="hero-noise"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal-up">Learning</div>
+      <h1 class="hero-name reveal-up" id="heroName">
+        <span class="name-ko" style="font-size: 0.8em;">배움</span>
+      </h1>
+      <p class="hero-sub reveal-up">
+        다양한 실무 및 융합 수업을 들으며 단단하게 쌓아온 디지털 핵심 기술과 배움의 발자취입니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== LEARNING ========== -->
+  <section class="learning section" id="learning" style="padding-top: 60px; min-height: 60vh;">
+    <div class="container">
+      <div class="learning-grid" style="margin-top: 0;">
+        <div class="learning-card glass-card reveal-up">
+          <div class="learning-icon">📐</div>
+          <h3>디지털 도구 활용</h3>
+          <p>다양한 디지털 도구와 소프트웨어를 익히며 창작과 분석의 폭을 넓혔습니다.</p>
+          <div class="learning-skills">
+            <span class="skill-dot"></span>
+            <span class="skill-dot"></span>
+            <span class="skill-dot"></span>
+          </div>
+        </div>
+
+        <div class="learning-card glass-card reveal-up" style="--delay: 0.1s">
+          <div class="learning-icon">💻</div>
+          <h3>웹 개발 기초</h3>
+          <p>HTML, CSS, JavaScript를 배우며 아이디어를 실제 웹으로 구현하는 능력을 키웠습니다.</p>
+          <div class="learning-skills">
+            <span class="skill-dot"></span>
+            <span class="skill-dot"></span>
+            <span class="skill-dot half"></span>
+          </div>
+        </div>
+
+        <div class="learning-card glass-card reveal-up" style="--delay: 0.2s">
+          <div class="learning-icon">📊</div>
+          <h3>데이터와 스토리텔링</h3>
+          <p>숫자와 데이터를 이야기로 풀어내는 방법을 탐구하고 있습니다.</p>
+          <div class="learning-skills">
+            <span class="skill-dot"></span>
+            <span class="skill-dot half"></span>
+            <span class="skill-dot empty"></span>
+          </div>
+        </div>
+
+        <div class="learning-card glass-card reveal-up" style="--delay: 0.3s">
+          <div class="learning-icon">🎨</div>
+          <h3>디자인 사고</h3>
+          <p>사용자 중심의 디자인 사고를 배우며 문제를 새로운 시각으로 바라보게 되었습니다.</p>
+          <div class="learning-skills">
+            <span class="skill-dot"></span>
+            <span class="skill-dot"></span>
+            <span class="skill-dot half"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quote -->
+      <div class="quote-block reveal-up" style="margin-top: 80px;">
+        <div class="quote-line"></div>
+        <blockquote>
+          "두 전공을 공부하며 깨달은 것 — 경영의 논리와 예술의 직관은 서로 반대가 아니라 서로를 완성시킨다."
+        </blockquote>
+        <div class="quote-author">— 조윤솔</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-name">조윤솔</div>
+      <p class="footer-school">한림대학교 · 경영학과 · 디지털인문예술 전공</p>
+      <p class="footer-copy">© 2026 Yoonsol Cho. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

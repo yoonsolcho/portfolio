@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>갤러리 — 조윤솔 포트폴리오</title>
+  <meta name="description" content="한림대학교 경영학과 & 디지털인문예술 전공 조윤솔의 포트폴리오 사이트입니다." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo" style="text-decoration: none;">YS</a>
+    <ul class="nav-links">
+      <li><a href="about.html" class="nav-link">소개</a></li>
+      <li><a href="projects.html" class="nav-link">프로젝트</a></li>
+      <li><a href="gallery.html" class="nav-link" style="color: var(--accent-1);">갤러리</a></li>
+      <li><a href="learning.html" class="nav-link">배움</a></li>
+      <li><a href="contact.html" class="nav-link">연락처</a></li>
+    </ul>
+    <div class="nav-menu" id="navMenu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="about.html" class="mobile-nav-link">소개</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">프로젝트</a></li>
+      <li><a href="gallery.html" class="mobile-nav-link">갤러리</a></li>
+      <li><a href="learning.html" class="mobile-nav-link">배움</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">연락처</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero hero-subpage" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="blob blob-4"></div>
+    <div class="hero-noise"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag reveal-up">Gallery</div>
+      <h1 class="hero-name reveal-up" id="heroName">
+        <span class="name-ko" style="font-size: 0.8em;">갤러리</span>
+      </h1>
+      <p class="hero-sub reveal-up">
+        그동안 정성껏 디자인하고 제작해 온 시각 그래픽 및 대동제 포스터 작품들을 모았습니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== GALLERY ========== -->
+  <section class="gallery section" id="gallery" style="padding-top: 60px; min-height: 60vh;">
+    <div class="container">
+      <div class="gallery-grid reveal-up" style="margin-top: 0;">
+        <div class="gallery-item reveal-up" data-index="1">
+          <img src="./교수님 조언 살짝 첨가..png" alt="Special" class="gallery-img">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">Special</h3>
+            <p class="gallery-desc">디지털디자인1</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-index="2">
+          <img src="./중간고사 축제 포스터 과제.png" alt="2026 한림대학교 대동제 포스터" class="gallery-img">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">2026 한림대학교 대동제 포스터</h3>
+            <p class="gallery-desc">AI디지털그래픽</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-index="3">
+          <img src="./점검 후_텍스쳐 넣은 ver. (rgb, png).png" alt="자기소개 포스터" class="gallery-img">
+          <div class="gallery-overlay">
+            <h3 class="gallery-title">자기소개 포스터</h3>
+            <p class="gallery-desc">디지털디자인1</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-name">조윤솔</div>
+      <p class="footer-school">한림대학교 · 경영학과 · 디지털인문예술 전공</p>
+      <p class="footer-copy">© 2026 Yoonsol Cho. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
