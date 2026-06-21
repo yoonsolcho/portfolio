@@ -1826,3 +1826,237 @@ blockquote {
     gap: 16px;
   }
 }
+
+/* =============================================
+   17. Custom Layout Updates (Breaking the Box Pattern)
+   ============================================= */
+
+/* About Timeline List */
+.about-timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.about-timeline-item {
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.01);
+  border-left: 2px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-timeline-item:hover {
+  background: rgba(167, 139, 250, 0.03);
+  border-left-color: var(--accent-1);
+  transform: translateX(6px);
+}
+
+.about-timeline-num {
+  font-family: var(--font-en);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--accent-1);
+  opacity: 0.6;
+}
+
+.about-timeline-info h4 {
+  font-family: var(--font-ko);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.about-timeline-info p {
+  font-family: var(--font-ko);
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Learning Competence List */
+.competence-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.competence-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 32px;
+  transition: all 0.3s ease;
+}
+
+.competence-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.competence-num {
+  font-family: var(--font-en);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--accent-2);
+}
+
+.competence-icon {
+  font-size: 20px;
+}
+
+.competence-header h3 {
+  font-family: var(--font-ko);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.competence-bar-container {
+  flex: 1;
+  min-width: 120px;
+  max-width: 200px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.competence-bar {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent-1));
+  border-radius: 10px;
+}
+
+.competence-desc {
+  font-family: var(--font-ko);
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  padding-left: 36px;
+}
+
+/* Projects Table/Row Layout */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 1.2fr 2.5fr 1fr;
+  align-items: center;
+  gap: 24px;
+  padding: 32px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.4s ease;
+}
+
+.project-row:hover {
+  background: rgba(255, 255, 255, 0.01);
+  border-bottom-color: var(--accent-1);
+}
+
+.project-row-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.project-row-meta .course {
+  font-family: var(--font-ko);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-2);
+  letter-spacing: 0.5px;
+}
+
+.project-row-meta .semester {
+  font-family: var(--font-ko);
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+.project-row-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-row-body h3 {
+  font-family: var(--font-ko);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  transition: color 0.3s;
+}
+
+.project-row:hover .project-row-body h3 {
+  color: var(--accent-1);
+}
+
+.project-row-body p {
+  font-family: var(--font-ko);
+  font-size: 13.5px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.project-row-action {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* Contact Custom Typo */
+.contact-hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.huge-contact-email {
+  font-size: clamp(24px, 5vw, 44px);
+  font-family: var(--font-en);
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 24px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s ease;
+  word-break: break-all;
+  margin-bottom: 32px;
+  letter-spacing: -0.5px;
+}
+
+.huge-contact-email:hover {
+  color: var(--accent-1);
+  border-bottom-color: var(--accent-1);
+  text-shadow: 0 0 30px rgba(167, 139, 250, 0.3);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .project-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px 8px;
+  }
+  .project-row-action {
+    justify-content: flex-start;
+    margin-top: 8px;
+  }
+}
